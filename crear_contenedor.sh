@@ -5,9 +5,9 @@
 # debe ejecutar este archivo, en nuestro caso el intérprete de
 # BASH
 
-# Se define el directorio del host como "path to working directory"
-# (PWD), esto es, la carpeta desde donde lanzamos este script.
-DIRECTORIO_DE_MI_MAQUINA=PWD
+# Se define el directorio de nuestra máquina para poder
+# extraer los archivos que están adentro del contenedor
+DIRECTORIO_DE_MI_MAQUINA=/home/gonzalo/workspace/dockerEMS
 
 docker run -ti \
     -e DISPLAY=$DISPLAY \
